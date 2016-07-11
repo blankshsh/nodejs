@@ -1,0 +1,8 @@
+使用了nodejs+express+mysql+jade
+启动本地服务器 以及mysql
+cmd
+node ./bin/www
+或者
+supervisor ./bin/www
+
+浏览器进入http://localhost:3000/

@@ -1,0 +1,215 @@
+/*导航页*/
+
+body {
+    background-color: #1E90FF !important;
+}
+
+.header {
+    border-bottom: 3px solid #FFF;
+}
+
+.mar-t30 {
+    margin-top: 30px;
+}
+
+.bg {
+    background-color: #F0F0F0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.navwrp {
+    background: #000;
+    height: 800px;
+    padding-left: 10px;
+    overflow: hidden;
+}
+
+.mynav {
+    margin-top: 10px;
+}
+
+.mynav div {
+    background: #000;
+    height: 40px;
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    color: #FFF;
+    text-align: center;
+}
+
+.index-list {
+    width: 100%;
+    background-color: #fff;
+}
+
+.index-list-item {
+    position: relative;
+    border-bottom: 1px solid #f6f6f6;
+    overflow: hidden;
+    padding: 10px 0;
+    margin: 0 10px;
+}
+
+.index-list-item .index-list-image {
+    font-size: 0;
+    height: 68px;
+    vertical-align: middle;
+    width: 95px;
+    text-align: center;
+    overflow: hidden;
+    border: 1px solid #e8e8e8;
+    float: left;
+    margin-left: 0;
+    margin-right: 10px;
+    background-color: #F4F7F9;
+    position: relative;
+}
+
+.index-list-item .index-list-image img {
+    height: 100%;
+    width: 100%;
+    vertical-align: middle;
+}
+
+.index-list-item .index-list-main-text {
+    max-height: 40px;
+    overflow: hidden;
+    -webkit-text-size-adjust: none;
+}
+
+.index-list-item .index-list-main-title {
+    font-size: 16px;
+    line-height: 20px;
+    color: #262b31;
+    margin: -1px 0 4px 0;
+}
+
+.index-list-item .index-list-main-abs {
+    font-size: 13px;
+    line-height: 20px;
+    color: #b8bac0;
+    font-weight: 400;
+}
+
+.index-list-bottom {
+    margin-top: 10px;
+}
+
+.index-list-item .index-list-main-time {
+    line-height: 20px;
+    text-align: left;
+    font-size: 12px;
+    line-height: 22px;
+    color: #b8bac0;
+    font-weight: 400;
+}
+
+.index-list-item .tip-fillred {
+    background-color: #e02f2f;
+    border: 1px solid transparent;
+}
+
+.index-list-item .tip-topnews {
+    float: right;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    color: #fff;
+    padding: 1px 2px;
+    border-radius: 2px;
+    margin-top: 1px;
+    margin-left: 10px;
+    display: inline-block;
+    max-width: 100px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.index-list-main-site {
+    display: none;
+    padding-right: 10px;
+}
+
+.index-list-album-container {
+    margin-top: 5px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.index-list-album-container .index-list-album {
+    overflow: hidden;
+    width: 33.33%;
+    max-height: 111px;
+    float: left;
+    position: relative;
+}
+
+.index-list-album-container .index-list-album-wrapper.one {
+    margin-right: 7px;
+}
+
+.index-list-album-container .index-list-album-wrapper {
+    background-color: #F4F7F9;
+    border: 1px solid #e8e8e8;
+}
+
+.index-list-album-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-height: 200px;
+}
+
+.index-list-album-container .index-list-album-wrapper.two {
+    margin: 0 3.5px;
+}
+
+.index-list-album-container .index-list-album-wrapper.three {
+    margin-left: 7px;
+}
+#news-btn{
+    padding: 10px;
+}
+#update{
+    margin-top: 100px;
+    padding-right: 10px;
+}
+.mar-r65{
+    margin-right:65px; 
+}
+.index-list .btn{
+    position: absolute;
+    bottom: 20px;
+    right: 0px;
+}
+.updatewrp{
+    display: none;
+    position: absolute;
+    height: 600px;
+    width: 800px;
+    top: 100px;
+    left: 50%;
+    margin-left: -400px;
+    background-color: #FFF;
+    border: 1px solid #000;
+    border-radius: 10px;
+
+}
+#close{
+    position: absolute;;
+    top: 0;
+    right: 0;
+}
+@media screen and (max-width: 768px) {
+    .sidebar {
+        display: none;
+    }
+}
+

@@ -1,0 +1,202 @@
+doctype html
+html
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport',content='width=320.1,minimum-scale=1.0,maximum-scale=1.0')
+        title 百度新闻
+        link(rel='stylesheet',type='text/css',href='/stylesheets/index.css')
+
+
+    body
+        <!-- 头部 -->
+        header
+            .header-left
+                .header-btn.handlogo
+                .header-btn.userhome
+            .header-right
+                .header-btn.subscribe
+                .header-btn.search
+        .wrp
+            .nav-wrp
+                .divider
+                .main-nav
+                    table
+                        tbody
+                            tr.tr-line
+                                td(colspan="1")
+                                    div
+                                        b
+                                        span.onclick.cur#type1 推荐
+                                td(colspan="1")
+                                    div
+                                        b
+                                        span.onclick#type2 百家
+                                td(colspan="1")
+                                    div
+                                        b
+                                        span.onclick#type3 本地
+                                
+                                td(colspan="1")
+                                    div
+                                        b
+                                        span 图片
+                                
+                                td(colspan="1")
+                                    div
+                                        b
+                                        span 娱乐
+                                td(colspan="1")
+                                    div
+                                        b
+                                        span 社会
+                            tr.tr-line
+                                td(colspan="1")
+                                    div
+                                        b
+                                        span 军事
+                                td(colspan="1")
+                                    div
+                                        b
+                                        span 女人
+                                td(colspan="1")
+                                    div
+                                        b
+                                        span 搞笑
+                                td(colspan="1")
+                                    div
+                                        b
+                                        span 科技
+                                td(colspan="2")
+                                    div
+                                        b
+                                        span#span-online(style="display:none") 互联网
+                                        .more 更多
+                                            .down-triangle
+                            tr(style="display: none")
+                                td(colspan="1")
+                                    div
+                                        b
+                                        span 生活
+                                td(colspan="1")
+                                    div
+                                        b
+                                        span 国际
+                                td(colspan="1")
+                                    div
+                                        b
+                                        span 国内
+                                td(colspan="1")
+                                    div
+                                        b
+                                        span 体育
+                                td(colspan="1")
+                                    div
+                                        b
+                                        span 汽车
+                                td(colspan="1")
+                                    div
+                                        b
+                                        span 财经
+                            tr(style="display: none;")
+                                td(colspan="1")
+                                    div
+                                        b
+                                        span 房产
+                                td(colspan="1")
+                                    div
+                                        b
+                                        span 时尚
+                                td(colspan="1")
+                                    div
+                                        b
+                                        span 教育
+                                td(colspan="1")
+                                    div
+                                        b
+                                        span 游戏
+                                
+                                td(colspan="1")
+                                    div
+                                        b
+                                        span 旅游
+                                td(colspan="1")
+                                    div
+                                        b
+                                        span 人文
+                            tr(style="display: none;")
+                                td(colspan="2")
+                                    div
+                                        b
+                                        span 创意
+                                td(colspan="2")
+                                    div
+                                        b
+                                        span 互联网+
+                .footer(style="display: none")
+                    .btn-group
+                        .reporter-rank 记者榜
+                        .media-rank
+                            b
+                            媒体榜
+                        .manage-subscribe
+                            b
+                            删除及排序
+                    .less 收起
+                        .up-triangle
+            .content
+                .imgmove
+                    <!-- 图片轮播 -->
+                    .g-list(style="margin-left: -100%")
+                        .g-item
+                            .g-item-innerbox
+                                .g-imagebox
+                                    img(src="images/car.jpg")
+                                
+                                h4.g-title
+                                    span 江西女司机车祸后弃车回家吃饭
+                        .g-item
+                            .g-item-innerbox
+                                .g-imagebox
+                                    img(src="images/xigua.jpg")
+                                
+                                h4.g-title
+                                    span 大学生西瓜大战减压 互扔瓜瓤
+                        .g-item
+                            .g-item-innerbox
+                                .g-imagebox
+                                    img(src="images/xiong.jpg")
+                                h4.g-title
+                                    span 夫妇养270斤熊23年 同桌进餐
+                        .g-item
+                            .g-item-innerbox
+                                .g-imagebox
+                                    img(src="images/car.jpg")
+                                h4.g-title
+                                    span 江西女司机车祸后弃车回家吃饭
+                        .g-item
+                            .g-item-innerbox
+                                .g-imagebox
+                                    img(src="images/xigua.jpg")
+                                h4.g-title
+                                    span 大学生西瓜大战减压 互扔瓜瓤
+                    <!-- 滚动显示条 -->
+                    .g-icons
+                        i.cur
+                        i
+                        i
+                .hotword
+                    <!-- 热词新闻 -->
+                    .hotword-left
+                        span 热点
+                    .hotword-right
+                        span 南方多地将再迎强降雨
+                        b.hotword-right-item
+               .index-view-subpage-feed
+                    <!-- 主新闻 -->
+                    .index-list
+                    .morewrp
+                        <!-- 点击加载更多 -->
+                        .moremoremore 点击加载更多
+        script(type='text/javascript', src='/scripts/jquery.js')
+        script(type='text/javascript', src='/scripts/ejs.min.js')
+        script(type='text/javascript', src='/scripts/index.js')

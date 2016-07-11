@@ -1,0 +1,93 @@
+doctype html
+html
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport',content='width=320.1,minimum-scale=1.0,maximum-scale=1.0')
+        link(rel='stylesheet',type='text/css',href='stylesheets/backstage.css')
+        link(rel='stylesheet',type='text/css',href='stylesheets/bootstrap.css')
+
+
+    body
+        .container.mar-t30.bg
+            .row
+               .col-sm-12.header
+                    h2 新闻后台发布系统
+                .col-lg-2.col-md-2.col-sm-2.navwrp.sidebar
+                    .mynav
+                        #allnews-id 新闻总览
+                        #newstype-id 查询新闻
+                        #addnews-id 新增新闻
+                .main.col-lg-10.col-md-10.col-sm-10
+                    .index-list
+                    .searchnews(style="display: none")
+                        #news-btn
+                            button(type="button")#type1.btn.btn-info 推荐
+                            button(type="button")#type2.btn.btn-info 百家
+                            button(type="button")#type3.btn.btn-info 本地
+                        .index-list
+                    .addnews(style="display: none")
+                        form#addnews.form-horizontal
+                            .form-group
+                                label(for="newsid").col-sm-2.control-label 新闻类别
+                                .col-sm-2
+                                    select.form-control#newstype(name="newstype")
+                                        option(value="type1") 推荐
+                                        option(value="type2") 百家
+                                        option(value="type3") 本地
+                            .form-group
+                                label.col-sm-2.control-label 新闻标题:
+                                .col-sm-10
+                                    input.form-control#newstitle(type="text",name="newstitle")
+                            .form-group
+                                label.col-sm-2.control-label(for="newsimg") 图片地址:
+                                .col-sm-10
+                                    input.form-control#newsimg(type="text",name="newsimg")
+                            .form-group
+                                label.col-sm-2.control-label(for="newscontent") 新闻内容:
+                                .col-sm-10
+                                    textarea#newscontent.form-control(type="text",rows="3",name="newscontent")
+                            .form-group
+                                label.col-sm-2.control-label(for="newstime") 新闻时间:
+                                .col-sm-4
+                                    input.form-control#newstime(type="date",name="newstime")
+                            .form-group
+                                .col-sm-offset-2.col-sm-1
+                                    input.btn.btn-success(type="submit" value="提交")
+                                .col-sm-2
+                                    input.btn.btn-danger(type="reset" value="重置")
+                    .updatewrp
+                            form#update.form-horizontal
+                                .form-group
+                                    label.col-sm-2.control-label(for="newsid") 新闻ID:
+                                    .col-sm-2
+                                        input.form-control#updatenewsid(type="text",name="newsid")
+                                .form-group
+                                    label.col-sm-2.control-label(for="newstype") 新闻类型:
+                                    .col-sm-2
+                                        input.form-control#updatenewstype(type="text",name="newstype")
+                                .form-group
+                                    label.col-sm-2.control-label(for="newstype") 新闻标题:
+                                    .col-sm-10
+                                        input.form-control#updatenewstitle(type="text",name="newstitle")
+                                .form-group
+                                    label.col-sm-2.control-label(for="newsimg") 图片地址:
+                                    .col-sm-10
+                                        input.form-control#updatenewsimg(type="text",name="newsimg")
+                                .form-group
+                                    label.col-sm-2.control-label(for="newscontent") 新闻内容:
+                                    .col-sm-10
+                                        textarea.form-control#updatenewscontent(type="text",rows="3",name="newscontent" )
+                                .form-group
+                                    label.col-sm-2.control-label(for="newstime") 新闻时间:
+                                    .col-sm-4
+                                        input.form-control#updatenewstime(type="date",name="newstime")
+                                .form-group
+                                    .col-sm-offset-2.col-sm-1
+                                        input.btn.btn-success(type="submit",value="提交")
+                                    .col-sm-2
+                                        input.btn.btn-danger(type="reset" value="重置")
+                            button.btn.btn-success#close(type="button")关闭
+        script(type='text/javascript',src='scripts/jquery.js')
+        script(type='text/javascript',src='scripts/backstage.js')
+        script(type='text/javascript',src='scripts/jquery.form.js')
+
